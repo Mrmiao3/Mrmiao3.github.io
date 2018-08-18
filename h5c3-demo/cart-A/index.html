@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 引入的css文件 -->
+    <link rel="stylesheet" href="css/jquery.fullpage.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body class="con">
+<script>
+    /**
+     * @author  刘
+     * @email   526459956@qq.com
+     */
+</script>
+
+<!--
+
+    github下载fullPage.js插件  搜索技巧 fullPage github
+
+    下载地址：https://github.com/alvarotrigo/fullPage.js
+
+    下载完解压 --- 一般使用的是dist这个文件夹 一般是用于开发环境的 ---
+
+    文档： http://www.dowebok.com/77.html --- 看文档操作
+
+    引入文件 -- js、css....
+
+-->
+
+<!--
+
+    纵向切换使用 section
+    横向切换使用 slide
+
+-->
+
+<!-- 公用的元素 -->
+<a href="javascript:;" class="go"><img src="images/00-go.png" alt=""></a> <!-- 购物中心 -->
+<a href="javascript:;" class="more"><img src="images/00-more.png" alt=""></a> <!-- 往下继续 -->
+
+<!--整体容器-->
+<!-- 1.指示器 点容器 就是右边那个小点-->
+<div class="container"> <!--自己定义的容器-->
+    <!-- 每一个切换的屏幕 -->
+    <!-- 第一屏 -->
+    <div class="section">
+        <!-- 背景 -->
+        <!-- 如果是大屏幕 是基于top定位 会脱离显示区域 所以需要要固定在一个区域内
+             解决方案：
+                    1.用一个固定的容器来装内容
+        -->
+        <div class="content screen01">
+            <!-- 商品列表,沙发,横幅 -->
+            <div class="goods"><img src="images/01-goods.png" alt=""></div> <!-- 商品列表 -->
+            <!--沙发-->
+            <div class="sofa"><img src="images/01-sofa.png" alt=""></div>
+            <!-- 横幅 -->
+            <div class="fly"><img src="images/01-fly.png" alt=""></div>
+        </div>
+    </div>
+    <!-- 第二屏 动画特点：完全进入当前屏的时候执行动画 需要借助js -->
+    <!-- 1.什么时候完全进入 完全进入后才播放动画 -->
+    <!-- 2.怎么做动画 ：给大容器追加一个类样式 在这个类下面可以给需要做动画的元素添加动画属性 -->
+    <div class="section screen02">
+        <div class="content">
+            <!-- 商品列表 -->
+            <div class="goods"><img src="images/02-goods.png" alt=""></div>
+            <!-- 沙发 -->
+            <div class="sofa"><img src="images/02-sofa.png" alt=""></div>
+            <!-- 输入框 搜索框 关键字-->
+            <div class="input">
+                <img class="search" src="images/02-search.png" alt="">
+                <img class="key" src="images/02-key.png" alt="">
+            </div>
+            <!-- 顶部的文字 -->
+            <div class="text">
+                <img class="text01" src="images/02-text1.png" alt="">
+                <img class="text02" src="images/02-text2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 第三屏 -->
+    <!-- 加上active类样式可以设置 默认显示的页面-->
+    <div class="section screen03 ">
+        <div class="content">
+            <div class="sofa"><img src="images/02-sofa.png" alt=""></div>
+            <div class="change">
+                <img src="images/03-change01.gif" alt="">
+                <img src="images/03-change02.gif" alt="">
+            </div>
+            <div class="cart">
+                <img src="images/03-cart01.gif" alt="">
+                <img src="images/03-cart02.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 第四屏 -->
+    <div class="section screen04">
+        <div class="content">
+            <!-- 白云 -->
+            <div class="cloud">
+                <img src="images/04-cloud.png" alt="">
+            </div>
+            <!-- 文字 -->
+            <div class="text">
+                <img src="images/04-text01.png" alt=""/>
+                <img src="images/04-text02.png" alt=""/>
+            </div>
+            <!-- 购物车 -->
+            <div class="cart"><img src="images/04-cart.png" alt=""></div>
+            <!-- 沙发 -->
+            <div class="sofa"><img src="images/02-sofa.png" alt=""></div>
+            <!-- 收货地址 -->
+            <div class="address">
+                <img src="images/04-address01.png" alt="">
+                <img src="images/04-address02.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 第五屏 -->
+    <div class="section screen05">
+        <div class="content">
+            <!-- 文字 -->
+            <div class="text"><img src="images/05-text.png" alt=""></div>
+            <!-- 沙发 -->
+            <div class="sofa"><img src="images/02-sofa.png" alt=""/></div>
+            <!-- 银行卡 账单 -->
+            <div class="card">
+                <img class="cardImg" src="images/05-card.png" alt="">
+                <img class="orderImg" src="images/05-order.png" alt="">
+            </div>
+            <!-- 鼠标 -->
+            <div class="mouse">
+                <img class="m1" src="images/05-mouse01.png" alt="">
+                <img class="m2" src="images/05-mouse02.png" alt="">
+                <img class="hand" src="images/05-hand.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 第六屏 -->
+    <div class="section screen06">
+        <div class="content">
+            <!-- 白云 -->
+            <div class="cloud">
+                <img src="images/06-cloud01.png" alt="">
+                <img src="images/06-cloud02.png" alt="">
+            </div>
+            <!-- 文字 -->
+            <div class="text">
+                <img src="images/06-text01.png" alt="">
+                <img src="images/06-text02.png" alt="">
+            </div>
+            <!-- 包裹 -->
+            <div class="box">
+                <img src="images/06-box.png" alt="">
+            </div>
+            <!-- 汽车 -->
+            <div class="car">
+                <!-- 汽车 -->
+                <img class="carImg" src="images/06-car.png" alt="">
+                <!-- 发货地址 -->
+                <img class="buyer" src="images/06-buyer.png" alt="">
+                <!-- 收货地址 -->
+                <img class="address" src="images/06-address.png" alt="">
+                <!-- 快递小哥 -->
+                <img class="worker" src="images/06-worker.png" alt="">
+                <!-- 请收货话语 -->
+                <img class="say" src="images/06-say.png" alt="">
+            </div>
+            <!-- 收货人 -->
+            <div class="person">
+                <!-- 收货人 -->
+                <img class="personImg" src="images/06-person.png" alt="">
+                <!-- 门 -->
+                <img class="door" src="images/06-door.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 第七屏 -->
+    <div class="section screen07">
+        <div class="content">
+            <!-- 星星评分 -->
+            <div class="star">
+                <img src="images/07-star.png" alt="">
+                <img src="images/07-star.png" alt="">
+                <img src="images/07-star.png" alt="">
+                <img src="images/07-star.png" alt="">
+                <img src="images/07-star.png" alt="">
+            </div>
+            <!-- 好评 -->
+            <div class="text"><img src="images/07-text.png" alt=""></div>
+        </div>
+    </div>
+    <!-- 第八屏 -->
+    <div class="section screen08">
+        <div class="content">
+            <!-- 开始购物 -->
+            <div class="shopping">
+                <img src="images/08-btn01.png" alt="">
+                <img src="images/08-btn02.gif" alt="">
+            </div>
+            <!-- 再来一次 -->
+            <div class="again">
+                <img src="images/08-again.png" alt="">
+            </div>
+            <!-- 手 -->
+            <div class="hand"><img src="images/08-hand.png" alt=""></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 普通jq文件 -->
+<script src="js/jquery-1.12.1.js"></script>
+<!-- 引入的js文件 -->
+<script src="js/jquery.fullpage.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

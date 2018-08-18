@@ -1,7 +1,90 @@
-.test {
-    width: 300px;
-    height: 100px;
-    text-align: center;
-    background: green;
-    margin: 0 auto;
+* {
+	margin: 0;
+	padding: 0;
 }
+
+ul {
+	list-style: none;
+}
+
+body {
+	background-color: #CCCCCC;
+	font-family: "微软雅黑",sans-serif;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+
+/*==============================*/
+.header {
+	font-size: 66px;
+	height: 100px;
+	line-height: 100px;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.header span {
+	float: left;
+}
+
+.info {
+	background-color: darkgoldenrod;
+	font-weight: 800;
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
+	height: 36px;
+}
+
+.info p {
+	float: left;
+	line-height: 36px;
+	margin-left: 50px;
+}
+
+.pro {
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.pro p {
+	font-size: 24px;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+
+.pro ul li a {
+	display: block;
+	width: 160px;
+	height: 60px;
+	line-height: 60px;
+	background: cadetblue;
+	float: left;
+	margin-right: 30px;
+	text-align: center;
+	border-radius: 6px;
+	font-size: 16px;
+	color: #000000;
+	margin-bottom: 30px;
+}
+
+
+
+
