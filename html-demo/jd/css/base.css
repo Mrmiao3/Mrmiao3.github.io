@@ -1,0 +1,422 @@
+/* 公共样式 */
+/* 字体图标声明 */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?1x1j55');
+  src:  url('../fonts/icomoon.eot?1x1j55#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1x1j55') format('truetype'),
+    url('../fonts/icomoon.woff?1x1j55') format('woff'),
+    url('../fonts/icomoon.svg?1x1j55#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 版心 */
+.w {
+	width: 1190px;
+	margin: 0 auto;
+}
+/* 左浮动 */
+.fl {
+	float: left;
+}
+/* 右浮动 */
+.fr {
+	float: right;
+}
+li {
+	list-style: none
+}
+ul, h1, h5, p , dl , dt ,dd ,ol{
+	margin: 0;
+	padding: 0;
+}
+input, button {
+	padding: 0;
+	border: 0;
+ }
+i,em {
+	font-style: normal;
+}
+a {
+	text-decoration: none;
+}
+img {
+	vertical-align: top;  /* 去除 图片低测缝隙  图片和文字的基线对齐 */
+}
+.style-red {
+	/* 红色 */
+	color: #f10215 !important; 
+}
+
+.clearfix:before,.clearfix:after { 
+  content:"";
+  display: table;  /* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */
+}
+.clearfix:after {
+ clear:both;
+}
+.clearfix {
+  *zoom:1;
+}
+/* 顶部广告栏 Start */
+.J_event {
+	background-color: #000;
+}
+.J_event a {
+	display: block;
+	background: url('../images/header.jpg') no-repeat;
+	height: 80px;
+	position: relative;
+}
+.J_event a i {
+	width: 20px;
+	height: 20px;
+	background: rgba(0, 0, 0,0.4);
+	display: block;
+	text-align: center;
+	position: absolute;
+	top: 5px;
+	right: 0;
+	font-family: "icomoon"; /* 声明所使用字体 */
+	font-style: normal;
+	line-height: 20px;
+	color: #FFF;
+}
+/* 顶部广告栏 END */
+
+/* 顶部快捷导航栏 Start*/
+.shortcut {
+	height: 30px;
+	background-color: #E3E4E5;
+	border: 1px solid #DDDDDD;
+	font-size: 12px;
+	line-height: 30px;
+}
+.shortcut a {
+	color: #9D9D9D;
+	font-size: 12px;
+}
+.pos {
+	font-family: "icomoon";
+	font-style: normal;
+	font-size: 14px;
+	color: #F10215; 
+}
+.shortcut .fl li {
+	margin-left: 200px;
+	height: 30px;
+	overflow: hidden;
+}
+.shortcut .fr li {
+	float: left;
+}
+/* 竖线 */
+.spacer {
+	width: 1px;
+	height: 10px;
+	background: #CCC;
+	margin: 10px 10px 0;
+}
+.dropdown {
+	padding-right: 15px;
+	position: relative;
+}
+.dropdown i {
+	font-family: "icomoon";
+	font-style: normal;
+	font-size: 16px;
+	position: absolute;
+	top: -2px;
+	right: -2px;
+
+}
+.erweima {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #CCC;
+	padding: 3px;
+	position: absolute;
+	top: 35px;
+	left: -8px;
+}
+
+/* 顶部快捷导航栏 END*/
+/* header 部分 Start */
+.header {
+	height: 140px;
+}
+.inner {
+	height: 140px;
+	position: relative;
+}
+.logo {
+	width: 190px;
+	height: 170px;
+	position: absolute;
+	top: -31px;
+	left: 0;
+	background-color: #fff;
+	box-shadow: 0 -12px 10px 0 rgba(0, 0, 0, 0.2); 
+	/* box-shadow:水平位置 垂直位置 模糊距离 阴影尺寸（影子大小） 阴影颜色  内/外阴影； */
+
+
+}
+.logo a {
+	display: block;
+	width: 190px;
+	height: 170px;
+	background: url('../images/logo.png') no-repeat;
+	text-indent: -999999px; /* 首行缩进 */
+	overflow: hidden;
+}
+.search {
+	width: 550px;
+	height: 35px;
+	position: absolute;
+	top: 25px;
+	left: 320px;
+}
+.search input {
+	width: 493px;
+	height: 33px;
+	border: 1px solid #F10215;
+	outline: none; /* 取消边框 */
+	color: #989898;
+	padding-left: 5px;
+	float: left;
+}
+.search button {
+	width: 50px;
+	height: 35px;
+	background-color: #F10215;
+	cursor: pointer; /* 鼠标变成小手 */
+	outline: none;
+}
+.search i {
+	font-family: "icomoon";
+	font-size: 14px;
+	color: #FFF;
+}
+/* 热点模块 */
+.hotwords {
+	position: absolute;
+	top: 70px;
+	left: 320px;
+}
+.hotwords a {
+	color: #9E9B99;
+	font-size: 12px;
+	margin: 0 3px 0;
+}
+/* 购物车模块 */
+.myCar {
+	width: 188px;
+	height: 33px;
+	border: 1px solid #CCC;
+	position: absolute;
+	right: 100px;
+	top: 25px;
+	text-align: center;
+	line-height: 33px
+}
+.myCar a {
+	color: #f10215;
+	font-size: 14px;
+	
+}
+.myCar i {
+	font-family: "icomoon";
+	font-size: 16px;
+	color: #f10215;
+	margin-right: 3px; 
+}
+.myCar em {
+	height: 16px;
+	font-size: 12px;
+	line-height: 16px;
+	background: #f10215;
+	border-radius: 10px;
+	position: absolute;
+	top: 5px;
+	left: 142px;
+	padding: 0 3px;
+	color: #FFF;
+}
+/* 导航栏信息模块 */
+.navitems {
+	position: absolute;
+	left: 200px;
+	bottom: 0;
+}
+.navitems ul {
+	float: left;
+}
+.navitems ul li {
+	float: left;
+	margin-left: 30px;
+}
+.navitems li a {
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	display: block;
+	font-weight: 700;
+	color: #555A5F;
+}
+.navitems li a:hover {
+	color: #f10215;
+}
+.navitems .spacer {
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: -10px;
+}
+/* 电脑模块 */
+.computer {
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+/* header 部分 END */
+
+/*==== 页面底部Start ====*/
+.footer {
+	height: 560px;
+	background: #EAEAEA;
+}
+.footer-service {
+	border-bottom: 1px solid #DEDEDE;
+}
+.footer-service-inner {
+	padding: 30px 0;
+}
+.footer-service-inner li,h5 {
+	float: left;
+}
+.service_unit {
+	width: 225px;
+	height: 42px;
+	margin: 0 auto;
+	position: relative;
+}
+.footer-service-inner li {
+	float: left;
+	width: 297px;
+	height: 42px;
+}
+.service_unit h5 {
+	width: 36px;
+	height: 42px;
+	background-color: red;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/ico_service.png) no-repeat;
+	text-indent: -999px;
+	overflow: hidden;
+}
+.service_unit p {
+	line-height: 42px;
+	margin-left: 45px;
+	font-size: 18px;
+	font-weight: 700;
+
+}
+.service_unit .kuai {
+	background-position: 0 -44px;
+}
+.service_unit .hao {
+	background-position: 0 -86px;
+}
+.service_unit .sheng {
+	background-position: 0 -128px;
+}
+
+/* 帮助模块 */
+.help {
+	padding-top: 20px;
+}
+.help dl{
+	float: left;
+	width: 195px;
+}
+.help dt {
+	font-size: 14px;
+	font-weight: 700;
+	color: #666;
+	height: 30px;
+}
+.help dd {
+	height: 22px;
+}
+.help dd a{
+	color: #727272;
+	font-size: 12px;
+}
+.help dd a:hover {
+	color: #f10215;
+}
+.help .cover {
+	float: right;
+	width: 207px;
+	height: 150px;
+	background: url(../images/ico_footer.png) no-repeat;
+}
+.cover dt {
+	text-align: center;
+}
+.help .info {
+	width: 175px;
+	height: 50px;
+	font-size: 12px;
+	margin-top: 5px;
+	margin-left: 10px;
+	line-height: 18px;
+	color: #727272;
+}
+.more {
+	text-align: right;
+	padding-right: 10px;
+}
+/* 版权模块 */
+.copyright {
+	border-top: 1px solid #ccc;
+	padding-top: 15px;
+	margin-top: 20px;
+}
+.links {
+	text-align: center;
+}
+
+.links a {
+	color: #727272;
+	font-size: 12px;
+}
+.links span {
+	font-size: 12px;
+	color: #D4CDCD;
+	margin: 0 6px;
+}
+.c-info {
+	font-size: 14px;
+	color: #9E9E9B;
+	text-align: center;
+	line-height: 20px;
+	margin-top: 10px;
+}
+
+.tupian {
+	text-align: center;
+	margin-top: 10px;
+}
+.tupian a{
+	width: 103px;
+	height: 32px;
+	display: inline-block;
+	background: url(../images/ico_footer.png) no-repeat 0 -151px;
+}
+.tupian .kexin {
+	background-position: -104px -151px;
+}
